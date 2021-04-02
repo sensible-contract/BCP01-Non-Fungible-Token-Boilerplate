@@ -18,9 +18,7 @@ class NftMgr {
 
   static async postTokenApi(route, param) {
     let ret = await Net.httpPost(`${this.tokenApiPrefix}${route}`, param);
-    console.log(param);
     if (ret.code == 0) {
-      console.log(ret.data);
       return ret.data;
     } else {
       throw `post to tokenApi error:${ret.code}`;
