@@ -1,0 +1,13 @@
+{
+  "default": {
+    "connections": {
+      "db_sensible_nft": {
+        "type": "mongodb",
+        "url": "mongodb://localhost:27017/",
+        "database": "sensible_nft"
+      }
+    },
+    "daosPath": "dao",
+    "reloadDaos": false
+  }
+}

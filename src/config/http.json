@@ -1,0 +1,8 @@
+{
+  "default": {
+    "port": 8092,
+    "routesPath": "route",
+    "reloadRoutes": true,
+    "enableCORS": true
+  }
+}
