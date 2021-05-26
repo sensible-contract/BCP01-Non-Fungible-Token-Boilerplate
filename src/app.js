@@ -39,6 +39,18 @@ var app = exports.app;
     const { NftMgr } = require("./domain/NftMgr");
     NftMgr.init(app.get("nftConfig"));
 
+    var express = require("express");
+    var ep = app.http.http;
+    ep.use("/", express.static("./public"));
+    ep.use((req, res, next) => {
+      res.render("index.html");
+    });
+
+    var ejs = require("ejs");
+    ep.set("views", __dirname + "/../public");
+    ep.set("view engine", "ejs");
+    ep.engine("html", ejs.__express);
+    ep.set("view engine", "html");
     console.log("start completed");
   } catch (e) {
     console.error("start failed", e);

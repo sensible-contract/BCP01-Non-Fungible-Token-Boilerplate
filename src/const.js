@@ -1,5 +1,5 @@
 const ErrCode = {
-  EC_OK: 0,
+  EC_OK: 200,
   EC_INNER_ERROR: -1, //服务器内部错误
   EC_PARAMS_LOST: -2, //参数缺失
   EC_PARAMS_INVALID: -3, //参数不合法

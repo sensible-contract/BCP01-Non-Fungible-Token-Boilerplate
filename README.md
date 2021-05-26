@@ -48,6 +48,8 @@ or run in production
 node src/app.js env=production
 ```
 
+open http://127.0.0.1:8092
+
 ## <span id="apimethod">Api Method</span>
 
 - [genesis](#genesis)
